@@ -1,8 +1,15 @@
-<form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+<div class="container">
+    <div class="row">
+        <div class="col col-lg-2">
 
-    <label for="name">Name: </label>
-    <input id="name" type="text" formControlName="name">
-  
-    <button type="submit" [disabled]="!itemForm.valid">Submit</button>
-</form>
+            <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
 
+                <label for="name">Name: </label>
+                <input id="name" type="text" formControlName="name">
+
+                <button type="submit" class="btn btn-sm btn-primary mt-3" [disabled]="!itemForm.valid"><i
+                    class="fa fa-paper-plane"></i> Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
