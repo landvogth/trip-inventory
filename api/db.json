@@ -1,16 +1,36 @@
 {
   "items": [
     {
-      "id": 2,
-      "name": "Real Madrid"
+      "id": 1,
+      "name": "Regenschirm"
     },
     {
-      "name": "Marcus Kosek",
-      "id": 3
+      "name": "Handy",
+      "id": 2
     },
     {
       "name": "Taschenlampe",
+      "id": 3
+    },
+    {
+      "name": "Socken",
+      "id": 4
+    },
+    {
+      "name": "Jeans",
+      "id": 5
+    },
+    {
+      "name": "Hat",
       "id": 6
+    },
+    {
+      "name": "Notebook",
+      "id": 7
+    },
+    {
+      "name": "Taschenlampe",
+      "id": 8
     }
   ],
   "trips": [
@@ -43,6 +63,58 @@
       "startdate": "2021-06-12",
       "enddate": "2021-06-30",
       "id": 6
+    }
+  ],
+  "lists": [
+    {
+      "id": 1,
+      "tripId": 1,
+      "items": [
+        2,
+        4,
+        7
+      ]
+    },
+    {
+      "id": 2,
+      "tripId": 1,
+      "items": [
+        1,
+        2,
+        4,
+        7
+      ]
+    },
+    {
+      "id": 4,
+      "tripId": 1,
+      "items": [
+        2,
+        3,
+        4,
+        7
+      ]
+    },
+    {
+      "id": 5,
+      "tripId": 1,
+      "items": [
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": 6,
+      "tripId": 1,
+      "items": [
+        2,
+        3,
+        4,
+        5
+      ]
     }
   ]
 }

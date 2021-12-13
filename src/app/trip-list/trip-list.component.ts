@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TripDataService } from '../trip-data.service';
 import { Observable } from 'rxjs';
+import { Trip } from '../trip';
 
 @Component({
   selector: 'app-trip-list',
@@ -10,6 +11,7 @@ import { Observable } from 'rxjs';
 export class TripListComponent implements OnInit {
 
   trips$: Observable<Object>;
+  selectedTrip:Trip = null;
 
   constructor(private tripDataService: TripDataService) {
     this.loadList();
@@ -27,6 +29,11 @@ export class TripListComponent implements OnInit {
 
     });
   }  
+
+  select(trip:Trip) {
+    console.log(trip.id);
+    this.selectedTrip = trip;
+  }
 
   ngOnInit(): void {
   }

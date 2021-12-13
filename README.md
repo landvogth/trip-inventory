@@ -1,10 +1,36 @@
+
+
+
 # trip-inventory
 
+Simple planing tool for trips and items to pack.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+and uses Json Server as file base database.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+Run `npm run api` for a json server. Db is storage in `/trip-inventory/api/db.json`.
+Api runs on `http://localhost:3000` and is mapped/proxied to `/api` to avoid local CORS 
+issues (see also `/trip-inventory/proxy.conf.json`).
+
+
+For example 
+
+`http://localhost:3000/trips`
+`http://localhost:3000/items`
+`http://localhost:3000/lists`
+
+are mapped to 
+
+`http://localhost:4200/api/trips`
+`http://localhost:4200/api/items`
+`http://localhost:4200/api/lists`
+
+
+
 
 ## Code scaffolding
 

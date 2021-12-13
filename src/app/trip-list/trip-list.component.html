@@ -1,10 +1,26 @@
-<p>Trips</p>
 
-<ul>
-    <li *ngFor="let trip of trips$ | async">{{trip.tripname}}  ({{trip.startdate}} - {{trip.enddate}})
-        <mat-icon aria-label="Delete Trip" (click)="delete(trip)">close</mat-icon>
-    </li>
-</ul>
+<div class="container">
+    <div class="row">
+        <div class="col col-lg-6">
+
+            <h2>Trips</h2>
+
+            <ul class="trips">
+                <li *ngFor="let trip of trips$ | async">
+                    <span (click)="select(trip)">
+                    {{trip.tripname}} ({{trip.startdate}} - {{trip.enddate}})
+                    </span>
+                    <i class="fa fa-trash" aria-hidden="true" (click)="delete(trip)"></i>
+                </li>
+            </ul>
+
+        </div>            
+    </div>            
+</div>            
+
+<app-trip-item-list [trip]="selectedTrip"></app-trip-item-list>
+
 
 <app-trip-editor (update)="loadList()"></app-trip-editor>
+
 

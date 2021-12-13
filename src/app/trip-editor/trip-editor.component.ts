@@ -11,8 +11,6 @@ import { Trip } from '../trip';
 })
 export class TripEditorComponent implements OnInit {
 
-  // @Output() private onFormGroupChange = new EventEmitter<any>();
-
   @Output() update = new EventEmitter<any>();
 
   showSavedMessage = false;

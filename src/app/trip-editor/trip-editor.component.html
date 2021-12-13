@@ -49,13 +49,9 @@
                         class="text-danger">Please enter a valid date</span>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-sm" [disabled]="tripFormGroup.invalid"><i
+                <button type="submit" class="btn btn-sm btn-outline-primary mt-3" [disabled]="tripFormGroup.invalid"><i
                         class="fa fa-paper-plane"></i> Submit</button>
             </form>
         </div>
     </div>
-</div>
-
-<div *ngIf="tripFormGroup.errors?.toSmall">
-    <span class="text-danger">Start must be smaller then end date</span>
 </div>

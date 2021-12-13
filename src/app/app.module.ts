@@ -12,6 +12,7 @@ import { TripListComponent } from './trip-list/trip-list.component';
 import { TripEditorComponent } from './trip-editor/trip-editor.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { ItemEditorComponent } from './item-editor/item-editor.component';
+import { TripItemListComponent } from './trip-item-list/trip-item-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ItemEditorComponent } from './item-editor/item-editor.component';
     TripListComponent,
     TripEditorComponent,
     ItemListComponent,
-    ItemEditorComponent
+    ItemEditorComponent,
+    TripItemListComponent
   ],
   imports: [
     BrowserModule,

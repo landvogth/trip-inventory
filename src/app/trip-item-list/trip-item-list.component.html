@@ -1,0 +1,12 @@
+<div *ngIf="trip" class="container">
+    <div class="row">
+        <div class="col col-lg-2">
+
+            <h4>Trip List - {{trip?.tripname}} ({{trip?.startdate}} - {{trip?.enddate}})</h4>
+
+            <div *ngIf="list">
+                {{list}}
+            </div>
+        </div>
+    </div>
+</div>
