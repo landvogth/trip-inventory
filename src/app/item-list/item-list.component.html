@@ -1,0 +1,9 @@
+<p>item-list</p>
+
+<ul>
+    <li *ngFor="let item of items$ | async">{{item.name}}
+        <mat-icon aria-label="Delete Item" (click)="deleteItem(item)">close</mat-icon>
+    </li>
+</ul>
+
+<app-item-editor (updateItems)="loadItemList()"></app-item-editor>

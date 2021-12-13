@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": 2,
+      "name": "Real Madrid"
+    },
+    {
+      "name": "Marcus Kosek",
+      "id": 3
+    },
+    {
+      "name": "Taschenlampe",
+      "id": 6
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "tripname": "Spain",
+      "startdate": "2022-01-01",
+      "enddate": "2022-02-01"
+    },
+    {
+      "id": 2,
+      "tripname": "Schweden",
+      "startdate": "2022-03-01",
+      "enddate": "2022-04-01"
+    },
+    {
+      "tripname": "Spain",
+      "startdate": "2021-05-12",
+      "enddate": "2021-05-15",
+      "id": 4
+    },
+    {
+      "tripname": "Spain444",
+      "startdate": "2021-04-12",
+      "enddate": "2021-04-15",
+      "id": 5
+    },
+    {
+      "tripname": "England",
+      "startdate": "2021-06-12",
+      "enddate": "2021-06-30",
+      "id": 6
+    }
+  ]
+}
